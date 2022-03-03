@@ -1,6 +1,8 @@
-package com.facebook;
+package com.facebook.view;
 
 import java.util.Scanner;
+//if we want to call a class from other package then we have to import
+import com.facebook.controller.FacebookController;
 
 public class FacebookView {
 
@@ -40,16 +42,16 @@ public class FacebookView {
 			a.deleteProfile();
 			break;
 		case 4:
-			System.out.println("profile edited");
+			a.editProfile();
 			break;
 		case 5:
-			System.out.println("profile searched");
+			a.searchProfile();
 			break;
 		case 6:
-			System.out.println("all profile viewed");
+			a.viewAllProfile();
 			break;
 		case 7:
-			System.out.println("login success");
+			a.loginProfile();
 			break;
 		default:
 			System.out.println("wrong choice");
